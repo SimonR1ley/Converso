@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "16720577239",
+    "project_id": "android-classroom-d3b70",
+    "storage_bucket": "android-classroom-d3b70.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:16720577239:android:8d2825a5b22bc6005b2692",
+        "android_client_info": {
+          "package_name": "com.example.converso"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUTmlIHDUL7hh9Q1vkE6_zCoFfsI1BfDY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
