@@ -27,6 +27,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.lifecycle.viewmodel.compose.viewModel
 import coil.compose.AsyncImage
 import coil.request.ImageRequest
 import com.example.converso.R
@@ -36,8 +37,9 @@ import com.example.converso.viewModels.ConversationsViewModel
 
 @Composable
 fun ConversationsScreen(
-    viewModel: ConversationsViewModel = ConversationsViewModel(),
+    viewModel: ConversationsViewModel = viewModel(),
     onNavToProfile: () -> Unit,
+    onNavToChat: (chatId: String) -> Unit,
     modifier: Modifier = Modifier){
 
     val  allConversations = viewModel?.convoList ?: listOf<Conversation>()
@@ -59,19 +61,26 @@ fun ConversationsScreen(
                     .clickable { onNavToProfile.invoke() }){
 
                 Image(painter = painterResource(id = R.drawable.ic_profile_btn), contentDescription = null,
-                modifier = Modifier.size(24.dp))
+                modifier = Modifier.size(35.dp))
             }
         }
 
-        Text(text = "Chats", fontSize = 24.sp, fontWeight = FontWeight.Bold)
+        Text(text = "Group Chats", fontSize = 25.sp, fontWeight = FontWeight.Bold)
 
         LazyColumn(){
             items(allConversations){conversation ->
-                ConverstationCard(
-                    Conversation(
-                        title = conversation.title,
-                        image = conversation.image)
-                )
+                Card(modifier = Modifier
+                    .padding(15.dp)
+                    .fillMaxWidth()
+                    .clickable { onNavToChat.invoke(conversation.id) }){
+                    ConversationCard(
+                        Conversation(
+                            title = conversation.title,
+                            image = conversation.image)
+                    )
+                }
+
+
             }
         }
 
@@ -81,12 +90,10 @@ fun ConversationsScreen(
 }
 
 @Composable
-fun ConverstationCard(
+fun ConversationCard(
     conversation: Conversation,
     modifier: Modifier = Modifier){
-    Card(modifier = Modifier
-        .padding(8.dp)
-        .fillMaxWidth()) {
+
         Column() {
             AsyncImage(
                 model = ImageRequest.Builder(context = LocalContext.current)
@@ -104,16 +111,20 @@ fun ConverstationCard(
 
             Text(
                 text = conversation.title,
-                style = MaterialTheme.typography.displayLarge,
-                modifier = Modifier.padding(16.dp))
-        }
+                fontSize = 16.sp,
+                fontWeight = FontWeight.Bold,
+                modifier = Modifier.padding(10.dp),
+//                style = MaterialTheme.typography.displayLarge,
+
+            )
+
     }
 }
 
 @Preview(showSystemUi = true)
 @Composable
 fun prevConversationsScreen(){
-    ConversoTheme {
-        ConversationsScreen(onNavToProfile = {})
+    ConversoTheme() {
+        ConversationsScreen(onNavToProfile = {}, onNavToChat = {} )
     }
 }

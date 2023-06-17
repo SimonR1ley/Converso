@@ -1,5 +1,6 @@
 package com.example.converso
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -11,6 +12,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.lifecycle.viewmodel.compose.viewModel
+import com.example.converso.services.BackgroundService
 import com.example.converso.ui.theme.ConversoTheme
 import com.example.converso.viewModels.AuthViewModel
 
@@ -28,7 +30,16 @@ class MainActivity : ComponentActivity() {
                     Navigation(authViewModel = authViewModel)
                 }
             }
+
+
+
         }
+        val serviceIntent = Intent(
+        this,
+        BackgroundService::class.java
+        )
+
+        startService(serviceIntent)
     }
 }
 

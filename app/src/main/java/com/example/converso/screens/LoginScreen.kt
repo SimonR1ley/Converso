@@ -35,16 +35,18 @@ import androidx.compose.ui.unit.sp
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.input.KeyboardType
 import com.example.converso.R
+import com.example.converso.services.MyNotification
 import com.example.converso.ui.theme.ConversoTheme
 import com.example.converso.viewModels.AuthViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun LoginScreen(
+//    modifier: Modifier = Modifier,
     authViewModel: AuthViewModel? = null,
     navToRegister:() -> Unit,
     navToHome:() -> Unit,
-    modifier: Modifier = Modifier) {
+    ) {
 
 
     val authUiState = authViewModel?.authUiState
@@ -69,15 +71,6 @@ fun LoginScreen(
     )
     {
 
-
-//        Spacer(modifier = Modifier.size(40.dp))
-//
-//        Text(text = "Login",
-//            style = MaterialTheme.typography.displaySmall,
-//            fontWeight = FontWeight.Medium,
-//            color = MaterialTheme.colorScheme.primary)
-//
-//        Spacer(modifier = Modifier.size(100.dp))
 
         Image(painter = painterResource(id = R.drawable.logo),
             contentDescription = null,
@@ -174,6 +167,30 @@ fun LoginScreen(
             Text(text = "Register")
         }
     }
+
+//        Button(onClick = {
+//                         val myNotification = MyNotification(
+//                             context,
+//                             "Test Notification",
+//                             "This is my first notification"
+//                         )
+//            myNotification.showNotification()
+//        },
+//            modifier = Modifier
+//                .width(250.dp)
+//                .padding(5.dp),
+//            colors = ButtonDefaults.buttonColors(
+//                Color(0xFF4AC789),
+//                contentColor = Color.White),
+//            shape = RoundedCornerShape(12.dp),
+//        ){
+//            Text(text = "Test Notification",
+//                fontSize = 14.sp,
+//                modifier = Modifier
+////            .fillMaxWidth()
+//                    .padding(5.dp))
+//        }
+
     }
 
     LaunchedEffect(key1 = authViewModel?.hasUser){
