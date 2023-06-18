@@ -242,7 +242,7 @@ Distributed under the MIT License. See `LICENSE` for more information.\
 
 ## Contact
 
-- **Simon Riley** - [email@address](mailto:email@address) - [@instagram_handle](https://www.instagram.com/instagram_handle/)
+- **Simon Riley** - [170044@virtualwindow.co.za](mailto:email@address) - [@simonbrettriley](https://www.instagram.com/instagram_handle/)
 - **Project Link** - https://github.com/SimonR1ley/Converso
 
 <!-- ACKNOWLEDGEMENTS -->
