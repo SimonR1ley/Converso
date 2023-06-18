@@ -19,7 +19,7 @@
 <p align="center">
 
   <a href="https://github.com/SimonR1ley/Converso">
-    <img src="screenshots/logo.png" alt="Logo" width="140" height="140">
+    <img src="screenshots/logo.png" alt="Logo" width="160" height="140">
   </a>
   
   <h3 align="center">Converso</h3>
@@ -282,12 +282,12 @@ Distributed under the MIT License. See `LICENSE` for more information.\
 
 <!-- MARKDOWN LINKS & IMAGES -->
 
-[image1]: /path/to/image.png
-[image2]: /path/to/image.png
-[image3]: /path/to/image.png
-[image4]: /path/to/image.png
-[image5]: /path/to/image.png
-[image6]: /path/to/image.png
+[image1]: screenshots/login.png
+[image2]: screenshots/signup.png
+[image3]: screenshots/notification.png
+[image4]: screenshots/groups.png
+[image5]: screenshots/profile.png
+[image6]: screenshots/chat.png
 [image7]: /path/to/image.png
 [image8]: /path/to/image.png
 [image9]: /path/to/image.png
