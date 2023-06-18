@@ -3,18 +3,17 @@
 <!-- Repository Information & Links-->
 <br />
 
-![GitHub repo size](https://img.shields.io/github/repo-size/username/projectname?color=%000000)
-![GitHub watchers](https://img.shields.io/github/watchers/username/projectname?color=%000000)
-![GitHub language count](https://img.shields.io/github/languages/count/username/projectname?color=%000000)
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/username/projectname?color=%000000)
+![GitHub repo size](https://img.shields.io/github/repo-size/SimonR1ley/Converso?color=%000000)
+![GitHub watchers](https://img.shields.io/github/watchers/SimonR1ley/Converso?color=%000000)
+![GitHub language count](https://img.shields.io/github/languages/count/SimonR1ley/Converso?color=%000000)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/SimonR1ley/Converso?color=%000000)
 [![LinkedIn][linkedin-shield]][linkedin-url]
 [![Instagram][instagram-shield]][instagram-url]
-[![Behance][behance-shield]][behance-url]
 
 <!-- HEADER SECTION -->
 <h5 align="center" style="padding:0;margin:0;">Simon Riley</h5>
 <h5 align="center" style="padding:0;margin:0;">170044</h5>
-<h6 align="center">Android & Year</h6>
+<h6 align="center">Android & 2023</h6>
 </br>
 <p align="center">
 
@@ -77,9 +76,7 @@ A nice introduction to this amazing project of mine.
 
 ### Built With
 
-- [Technology Name](path/to/technology/website)
-- [Technology Name](path/to/technology/website)
-- [Technology Name](path/to/technology/website)
+- [Android Studio](https://developer.android.com/studio?gclid=Cj0KCQjw1rqkBhCTARIsAAHz7K1rbhjGVSwfL7RjOLwN1bgbxqlMO5n3wLEHkBPD1NhQPmyCYrn-BR8aAkIjEALw_wcB&gclsrc=aw.ds)
 
 <!-- GETTING STARTED -->
 <!-- Make sure to add appropriate information about what prerequesite technologies the user would need and also the steps to install your project on their own mashines -->
