@@ -53,9 +53,6 @@
   - [Implementation Process](#implementation-process)
     - [Highlights](#highlights)
     - [Challenges](#challenges)
-  - [Reviews and Testing](#peer-reviews)
-    - [Feedback from Reviews](#feedback-from-reviews)
-    - [Unit Tests](#unit-tests)
   - [Future Implementation](#peer-reviews)
 - [Final Outcome](#final-outcome)
   - [Mockups](#mockups)
@@ -65,7 +62,6 @@
 - [Contributing](#contributing)
 - [License](#license)
 - [Contact](#contact)
-- [Acknowledgements](#acknowledgements)
 
 <!--PROJECT DESCRIPTION-->
 
@@ -122,28 +118,28 @@ Here are a couple of ways to clone this repo:
 
 ### Feature 1
 
-Description of Feature
+Notifications for messages recieved in the group chats.
 
 ![image3][image3]
 
 ### Feature 2
 
-Description of Feature
+Group Chats.
 
 ![image4][image4]
 
 ### Feature 3
 
-Description of Feature
+Chats.
 
-![image5][image5]
+![image7][image7]
 
 <!-- CONCEPT PROCESS -->
 <!-- Briefly explain your concept ideation process -->
 
 ## Concept Process
 
-The `Conceptual Process` is the set of actions, activities and research that was done when starting this project.
+I did some research on apps similar to this one looking for some inspiration for design. I then built some mockups and played around until I was happy with the design.
 
 ### Ideation
 
@@ -163,7 +159,7 @@ The `Conceptual Process` is the set of actions, activities and research that was
 
 ## Development Process
 
-The `Development Process` is the technical implementations and functionality done in the frontend and backend of the application.
+I started with the design of the application. Building the different screens and making sure it all looked good. I then set up the navigation to move through the application. Then finally i started working on the functionality of the app.
 
 ### Implementation Process
 
@@ -178,40 +174,24 @@ The `Development Process` is the technical implementations and functionality don
 
 <!-- stipulated the highlight you experienced with the project -->
 
-- Sunshine.
-- Rainbows.
+- I really enjoyed getting the chat system working, It's the first time I've built something like it so seeing it work was awesome.
 
 #### Challenges
 
 <!-- stipulated the challenges you faced with the project and why you think you faced it or how you think you'll solve it (if not solved) -->
 
-- Bugs.
-- Bugs.
+- My main Bug was the profile screen. The app would crash everytime i'd navigate to that screen. I did some research and found there was a typo.
 
 ### Reviews & Testing
 
 <!-- stipulate how you've conducted testing in the form of peer reviews, feedback and also functionality testing, like unit tests (if applicable) -->
 
-#### Feedback from Reviews
-
-`Peer Reviews` were conducted by my fellow students and lecturer. The following feedback I found useful:
-
-- Feedback one.
-- Feedback two.
-
-#### Unit Tests
-
-`Unit Tests` were conducted to establish working functionality. Here are all the tests that were ran:
-
-- Test 1 of this functionality
-- Test 2 of this functionality
-
 ### Future Implementation
 
 <!-- stipulate functionality and improvements that can be implemented in the future. -->
 
-- Future 1.
-- Future 2.
+- I would like to add functionality to be able to create more groups.
+- With the ability to add more groups I would like to make some adjustments to the design a little to accomodate this update.
 
 <!-- MOCKUPS -->
 
@@ -270,16 +250,6 @@ Distributed under the MIT License. See `LICENSE` for more information.\
 
 <!-- ACKNOWLEDGEMENTS -->
 
-## Acknowledgements
-
-<!-- all resources that you used and Acknowledgements here -->
-
-- [Resource Name](path/to/resource)
-- [Resource Name](path/to/resource)
-- [Resource Name](path/to/resource)
-- [Resource Name](path/to/resource)
-- [Resource Name](path/to/resource)
-
 <!-- MARKDOWN LINKS & IMAGES -->
 
 [image1]: screenshots/login.png
@@ -289,9 +259,9 @@ Distributed under the MIT License. See `LICENSE` for more information.\
 [image5]: screenshots/profile.png
 [image6]: screenshots/chat.png
 [image7]: /path/to/image.png
-[image8]: /path/to/image.png
-[image9]: /path/to/image.png
-[image10]: /path/to/image.png
+[image8]: screenshots/LoginWireframe.png
+[image9]: screenshots/SignupWireframe.png
+[image10]: screenshots/ProfileWireframe.png
 
 <!-- Refer to https://shields.io/ for more information and options about the shield links at the top of the ReadMe file -->
 
